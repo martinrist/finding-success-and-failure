@@ -1,0 +1,3 @@
+--command "stack ghci finding-success-and-failure:finding-success-and-failure-test finding-success-and-failure:lib"
+--test "Spec.main"
+--lint
