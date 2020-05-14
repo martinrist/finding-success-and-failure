@@ -1,0 +1,41 @@
+name:                finding-success-and-failure
+version:             0.1.0.0
+github:              "martinrist/finding-success-and-failure"
+license:             BSD3
+author:              "Martin Rist"
+maintainer:          "mlr-github@martinrist.com"
+copyright:           "2020 Martin Rist"
+
+extra-source-files:
+- README.md
+- ChangeLog.md
+
+description:         Please see the README on GitHub at <https://github.com/martinrist/finding-success-and-failure#readme>
+
+dependencies:
+- base >= 4.7 && < 5
+
+library:
+  source-dirs: src
+
+executables:
+  finding-success-and-failure-exe:
+    main:                Main.hs
+    source-dirs:         app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - finding-success-and-failure
+
+tests:
+  finding-success-and-failure-test:
+    main:                Spec.hs
+    source-dirs:         test
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - finding-success-and-failure
