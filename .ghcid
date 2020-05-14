@@ -1,3 +1,6 @@
---command "stack ghci finding-success-and-failure:finding-success-and-failure-test finding-success-and-failure:lib"
+# To avoid the 'unable to locate module' error from `haskell-ide-engine`
+# we add `test` as a `source-dir` for the library definition in `package.yaml`.
+# As a result, we don't need to include `finding-success-and-failure:test` here.
+--command "stack ghci finding-success-and-failure:lib"
 --test "Spec.main"
 --lint

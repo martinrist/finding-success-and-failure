@@ -16,7 +16,11 @@ dependencies:
 - base >= 4.7 && < 5
 
 library:
-  source-dirs: src
+  source-dirs:
+  - src
+  - test            # This is required to avoid the 'unable to locate module' error from `haskell-ide-engine`
+  dependencies:
+  - hspec           # This is required to avoid the 'unable to locate module' error from `haskell-ide-engine`
 
 executables:
   finding-success-and-failure-exe:
