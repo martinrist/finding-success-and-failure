@@ -22,6 +22,7 @@ library:
   ghc-options:
   - -Wall
   - -Werror
+  - -Wno-unrecognised-pragmas   # This allows us to use the `{-# HLINT ... #-}` pragma to disable HLint rules
   dependencies:
   - hspec           # This is required to avoid the 'unable to locate module' error from `haskell-ide-engine`
   - QuickCheck

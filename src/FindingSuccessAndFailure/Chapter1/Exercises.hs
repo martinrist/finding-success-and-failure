@@ -5,6 +5,7 @@ module FindingSuccessAndFailure.Chapter1.Exercises where
 absValWithIf :: (Num a, Ord a) => a -> a
 absValWithIf x = if x < 0 then negate x else x
 
+{-# HLINT ignore absValWithCase "Use if" #-}
 absValWithCase :: (Num a, Ord a) => a -> a
 absValWithCase x = case x < 0 of
     True  -> -x
