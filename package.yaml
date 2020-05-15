@@ -21,6 +21,7 @@ library:
   - test            # This is required to avoid the 'unable to locate module' error from `haskell-ide-engine`
   dependencies:
   - hspec           # This is required to avoid the 'unable to locate module' error from `haskell-ide-engine`
+  - QuickCheck
 
 executables:
   finding-success-and-failure-exe:
@@ -45,3 +46,4 @@ tests:
     dependencies:
     - finding-success-and-failure
     - hspec
+    - QuickCheck
