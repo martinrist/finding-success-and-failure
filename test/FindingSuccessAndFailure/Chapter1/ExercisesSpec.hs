@@ -8,7 +8,7 @@ testExercise1 :: Spec
 testExercise1 =
     describe "Exercise 1 - `absValWithCase`" $ do
         it "Returns 0 when passed 0" $
-            absValWithCase 0 `shouldBe` 0
+            absValWithCase (0 :: Integer) `shouldBe` 0
         it "Returns +ve value when passed -ve value" $
             absValWithCase (-1 :: Integer) `shouldBe` 1
         it "Always returns a positive value" $

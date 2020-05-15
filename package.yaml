@@ -19,6 +19,9 @@ library:
   source-dirs:
   - src
   - test            # This is required to avoid the 'unable to locate module' error from `haskell-ide-engine`
+  ghc-options:
+  - -Wall
+  - -Werror
   dependencies:
   - hspec           # This is required to avoid the 'unable to locate module' error from `haskell-ide-engine`
   - QuickCheck
